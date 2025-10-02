@@ -38,7 +38,7 @@ async def handle_photo(message: Message):
         await message.bot.download_file(file_path, input_path)
 
         # Обрабатываем изображение
-        await image_processor.process_image(input_path, output_path)
+        await image_processor.remove_background(input_path, output_path)
 
         # Отправляем обработанное изображение
         with open(output_path, "rb") as photo_file:

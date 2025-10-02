@@ -7,7 +7,7 @@ class ImageProcessor:
     Поддерживает multiple модели для разных типов изображений.
     """
 
-    # Доступные модели как свойство класса
+    # Доступные модели
     AVAILABLE_MODELS: list[dict[str, str]] = [
         {
             "name": "u2net_human_seg",
